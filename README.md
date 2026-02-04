@@ -2,7 +2,7 @@
 **[UC Berkeley CS 61A](https://cs61a.org)** 课程项目实现
 
 <p align="right">
-  <a href="./README.md">English</a> | <strong>简体中文</strong>
+  <a href="./README_en.md">English</a> | <strong>简体中文</strong>
 </p>
 
 ## 项目列表
