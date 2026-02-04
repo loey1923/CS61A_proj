@@ -37,7 +37,20 @@ def pick(paragraphs, select, k):
     ''
     """
     # BEGIN PROBLEM 1
-    "*** YOUR CODE HERE ***"
+    filted = list(filter(select, paragraphs))
+    if len(filted) - 1 < k:
+        return ''
+    else:
+        return  filted[k]
+    """If not use FILTER
+    count = 0
+    for p in paragraphs:
+        if count == k and select(p):
+            return p
+        if select(p):
+            count += 1
+    return ''
+    """
     # END PROBLEM 1
 
 
@@ -57,7 +70,14 @@ def about(subject):
     assert all([lower(x) == x for x in subject]), "subjects should be lowercase."
 
     # BEGIN PROBLEM 2
-    "*** YOUR CODE HERE ***"
+    def check(paragraph):
+        words = split(lower(remove_punctuation(paragraph)))
+        for s in subject:
+            for p in words:
+                    if p == s:
+                        return True
+        return False
+    return check
     # END PROBLEM 2
 
 
@@ -87,7 +107,20 @@ def accuracy(typed, source):
     typed_words = split(typed)
     source_words = split(source)
     # BEGIN PROBLEM 3
-    "*** YOUR CODE HERE ***"
+    num_typed = len(typed_words)
+    num_source = len(source_words)
+    if (0, 0) == (num_typed, num_source):
+        return 100.0
+    elif 0 in (num_typed, num_source):
+        return 0.0
+    
+    same, total = 0, abs(num_typed - num_source)
+    t = zip(typed_words, source_words)
+    for pairs in t:
+        total += 1
+        if pairs[0] == pairs[1]:
+            same += 1
+    return 100 * (same / total)
     # END PROBLEM 3
 
 
@@ -105,7 +138,8 @@ def wpm(typed, elapsed):
     """
     assert elapsed > 0, "Elapsed time must be positive"
     # BEGIN PROBLEM 4
-    "*** YOUR CODE HERE ***"
+    chars = len(typed) / 5
+    return chars * 60 / elapsed
     # END PROBLEM 4
 
 
