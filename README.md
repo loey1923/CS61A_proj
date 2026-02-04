@@ -3,14 +3,14 @@ Personal implementations of projects for UC Berkeley's **[CS 61A.](https://cs61a
 
 <p align="right">   <strong>English</strong> | <a href="./README_zh.md">简体中文</a> </p>
 
-# projects
+## projects
 
 - **Hog**: A simulator for a dice game, practicing control flow and higher-order functions. 
 - **Cats**: A typing test program to measure typing speed and accuracy. 
 - **Ants**: A tower defense game (similar to Plants vs. Zombies) implementing OOP. 
 - **Scheme** A functional programming interpreter built from scratch.
 
-## How to Run
+### How to Run
 
  To run a specific project, navigate to the corresponding directory and use the `ok` autograder: 
 
