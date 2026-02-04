@@ -1,7 +1,9 @@
 # CS61A_proj
 Personal implementations of projects for UC Berkeley's **[CS 61A.](https://cs61a.org/)**
 
-<p align="right">   <strong>English</strong> | <a href="./README_zh.md">简体中文</a> </p>
+<p align="right">
+  <a href="./README_en.md">English</a> | <strong>简体中文</strong>
+</p>
 
 ## projects
 
