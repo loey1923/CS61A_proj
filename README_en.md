@@ -12,17 +12,6 @@ Personal implementations of projects for UC Berkeley's **[CS 61A.](https://cs61a
 - **Ants**: A tower defense game (similar to Plants vs. Zombies) implementing OOP. 
 - **Scheme** A functional programming interpreter built from scratch.
 
-### How to Run
+### Resource Acquisition
 
- To run a specific project, navigate to the corresponding directory and use the `ok` autograder: 
-
-```bash
-#to run tests for the Hog project 
-python3 ok -q 01
-
-#to run the GUI of the HOG project
-python3 hog_gui.py
-```
-
-
-
+All course resources are directly accessible on the official website. (Note: Some materials may not be released yet based on the current course schedule; additionally, past course websites often require a Berkeley email for access.) You can also watch the lectures on Bilibili with [English Audio and Subtitles](https://www.bilibili.com/video/BV1sy411z7nA/). Other supplementary materials are available through the [CS Self-Learning Community](https://www.learncs.site/docs/curriculum-resource/cs61a/cs61a_en).
